@@ -1,0 +1,17 @@
+docker pull postgres:12
+docker images
+postgres container created: docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d --restart always postgres:12
+docker ps
+
+container stop: docker stop postgres
+
+docker ps -a 
+
+remove container: docker ps rm postgres 
+
+container start: docker start postgres
+
+
+inside container: docker exec -it postgres bash
+
+psql -U postgres
