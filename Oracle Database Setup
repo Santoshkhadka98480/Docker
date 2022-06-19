@@ -1,0 +1,6 @@
+sudo docker pull thebookpeople/oracle-xe-11g
+sudo docker images
+docker run thebookpeople/oracle-xe-11g
+sudo docker ps -a
+sudo docker start 2f89d031904c
+sudo docker exec -it 2f89d031904c /bin/bash
