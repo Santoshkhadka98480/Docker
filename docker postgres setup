@@ -15,3 +15,6 @@ container start: docker start postgres
 inside container: docker exec -it postgres bash
 
 psql -U postgres
+
+
+sudo docker rmi 9bf1006c9d89
