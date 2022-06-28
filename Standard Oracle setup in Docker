@@ -6,8 +6,10 @@ https://www.oracle.com/database/technologies/oracle-database-software-downloads.
 ==>Download File
 
 
+cd docker-images/OracleDatabase/SingleInstance/dockerfiles/19.3.0
+====copy the oracle linux file to this directory
+
 cd docker-images/OracleDatabase/SingleInstance/dockerfiles
-====copy the oracle linux file to this directory and then Run
 sudo ./buildContainerImage.sh -v 19.3.0 -s
 
 
