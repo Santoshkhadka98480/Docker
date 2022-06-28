@@ -18,9 +18,9 @@ sudo docker run --name oracle -p 1524:1521 -p 5500:5500  -e ORACLE_SID=orcl -e O
 
 docker logs -f 
 
-sudo docker start 1fab5f4fdbf5
-sudo docker exec 1fab5f4fdbf5 /opt/oracle/setPassword.sh password
-sudo docker exec -it 1fab5f4fdbf5 /bin/bash
+sudo docker start 1fab5f4fdbf5(Container ID)
+sudo docker exec 1fab5f4fdbf5(Container ID) /opt/oracle/setPassword.sh password
+sudo docker exec -it 1fab5f4fdbf5(Container ID) /bin/bash
 
 sqlplus sys/password@orcl as sysdba
 
