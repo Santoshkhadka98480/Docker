@@ -14,7 +14,7 @@ sudo ./buildContainerImage.sh -v 19.3.0 -s
 
 
 sudo docker volume create oracle-db
-sudo docker run --name oracle -p 1524:1521 -p 5500:5500  -e ORACLE_SID=orcl -e ORACLE_PWD=password -v oracle-db:/opt/oracle/oradata oracle/database:19.3.0-se2
+sudo docker run --name oracle(Must be Unique) -p 1524:1521 -p 5500:5500  -e ORACLE_SID=orcl(Database name) -e ORACLE_PWD=password -v oracle-db(Volume Name):/opt/oracle/oradata oracle/database:19.3.0-se2
 
 docker logs -f 
 
